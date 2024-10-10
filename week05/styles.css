@@ -1,0 +1,113 @@
+body {
+    background-color: #f4e8e8; /* Light rosy brown background for subtle warmth */
+    color: #5e4a4a; /* Darker rosy brown text for contrast */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Wrapper */
+#wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #bc8f8f; /* Main rosy brown shade */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+header h2 {
+    margin: 10px 0 0;
+    font-size: 1.5rem;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #a67878; /* Slightly darker rosy brown */
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #f9f1f1; /* Lighter hover effect */
+}
+
+article.intro img.introThumb {
+	border: solid 3px black;
+	background-color: #8e5555;
+	padding: 5px;
+	margin: 30px;
+	box-shadow: 4px 4px 2px 0 rgba(0, 0, 0, 0.5);
+	
+article.intro img.introThumb:hover {
+	background-color: #fff;	
+}
+
+/* Section Styling */
+section {
+    padding: 50px 10%;
+    background-color: #f4e8e8; /* Soft background */
+}
+
+section h1 {
+    color: #bc8f8f;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.2rem;
+    color: #5e4a4a; /* Darker text for readability */
+}
+
+/* Button Styles */
+button {
+    background-color: #bc8f8f; /* Rosy brown button */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #a67878; /* Darker shade on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #5e4a4a; /* Darker rosy brown for footer */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
