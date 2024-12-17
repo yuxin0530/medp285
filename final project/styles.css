@@ -1,0 +1,251 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff0f6; 
+  color: #333;
+}
+
+header {
+  background-color: #ffb6c1; 
+  padding: 1.5rem 2rem; 
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px; 
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end; 
+  gap: 3rem; 
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.6rem; 
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem; 
+  border-radius: 4px;
+  transition: all 0.3s ease; 
+}
+
+nav ul li a:hover {
+  background-color: #ff69b4; 
+  color: #fff;
+  transform: scale(1.1); 
+}
+
+
+footer {
+  background-color: #ff6699; 
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+/* Hero Section Styles */
+.hero {
+  background: url('images/background.jpeg') center center no-repeat;
+  background-size: cover;
+  background-position: center top;
+  height: 100vh; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  flex-direction: column; 
+  padding: 0 2rem; 
+  color: white;
+  text-align: center;
+}
+
+.shop-now-btn {
+  display: inline-block;
+  background-color: #ffb6c1; 
+  padding: 1.5rem 3rem; 
+  font-size: 1.5rem; 
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 2rem; 
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.shop-now-btn:hover {
+  background-color: #ff69b4; 
+  transform: translateY(-3px); 
+}
+
+
+.hero h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ff69b4;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  color: #ffb6c1;
+}
+
+
+/* Product List Styles - Grid Layout */
+.product-list {
+  margin: 2rem 0;
+  padding: 0 2rem;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Creates a responsive grid */
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+
+.product-card h3 {
+  font-size: 1.3rem;
+  margin: 1rem 0;
+}
+
+.product-card p {
+  font-size: 1.1rem;
+  color: #666;
+  padding: 0 1rem 1rem;
+}
+
+.product-card .price {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #ff6699; 
+  padding: 0 1rem 1rem;
+}
+
+.add-to-cart-btn {
+  display: inline-block;
+  background-color: #ffb6c1;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #ff69b4; 
+  transform: translateY(-2px); 
+}
+
+/* Cart Page Styles */
+.cart-section {
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item img {
+  width: 100px;
+  height: auto;
+}
+
+.cart-item h3 {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.cart-item p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.remove-item-btn {
+  background-color: #ffb6c1;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.remove-item-btn:hover {
+  background-color: #ff69b4; 
+  transform: translateY(-2px); 
+}
+
+.cart-summary {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.checkout-btn {
+  background-color: #28a745; 
+  color: white;
+  font-size: 1.2rem;
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.checkout-btn:hover {
+  background-color: #218838; 
+  transform: translateY(-2px); 
+}
+
+.cart-summary h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
